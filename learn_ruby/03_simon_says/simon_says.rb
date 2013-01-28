@@ -14,3 +14,7 @@ n-=1
 n.times {str2=str2+str+" "}
 return str2+str
 end
+
+def start_of_word (str, n)
+str[0,n]
+end
