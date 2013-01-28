@@ -18,3 +18,7 @@ end
 def start_of_word (str, n)
 str[0,n]
 end
+
+def first_word (str)
+str.split(" ").first
+end
