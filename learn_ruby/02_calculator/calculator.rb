@@ -6,6 +6,10 @@ def subtract (a,b)
 a-b
 end
 
-def sum
+def sum (a)
+return a.inject(0) { |result, elem| result = result + elem}
+end
 
+def multiply (a,b)
+return a*b
 end
