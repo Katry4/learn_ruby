@@ -22,3 +22,17 @@ end
 def first_word (str)
 str.split(" ").first
 end
+
+def titleize (str)
+sub_str=str.split(' ')
+sub_str[0].capitalize;
+for i in 1..sub_str.size do
+  if sub_str[i].to_s.length>3
+     sub_str[i].to_s.capitalize
+  end
+end
+retrn =""
+sub_str.map! {|w|  if w.length>3 then w.capitalize else w end}.join(' ')
+sub_str[0]=sub_str[0].capitalize
+sub_str.map{ |wrd| wrd }.join(' ')
+end
