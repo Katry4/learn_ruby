@@ -11,7 +11,9 @@ require "silly_blocks"
 describe "some silly block functions" do
 
   describe "reverser" do
+
     it "reverses the string returned by the default block" do
+      
       result = reverser do
         "hello"
       end
